@@ -1,0 +1,118 @@
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Helvetica', 'Arial'; /* initial fonts */
+}
+#top-bar { 
+    width: 100%; 
+    background: #F1F1F1; /* light gray */ 
+    border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */ 
+    height: 25px;
+}
+.normal-wrapper { 
+    width: 100%;
+    height: fit-content; 
+    margin: 0 auto; 
+    padding: 15px 40px; 
+    background: white; 
+    overflow: auto;
+}
+#logo { 
+    color: #000000; 
+    font-size: 60pt; 
+    float: left;
+    height: 75px;
+}
+h1 { 
+    float: left; 
+    margin: 21px 0 0 25px;
+}
+#top-color-splash { 
+    width: 100%; 
+    height: 4px; 
+    background: #EB6361;
+}
+#navbar { 
+    list-style-type: none; /* remove bullet points */ 
+    margin: 29px 50px 0 0; 
+    padding: 0; float: right; 
+    font-size: 16pt;
+}
+#navbar li { 
+    display: inline; /* make items horizontal */
+}
+#navbar li a:link, #navbar li a:visited, #navbar li a:active { 
+    text-decoration: none; /* remove underline */ 
+    color: #000000; 
+    padding: 0 16px 0 10px; /* space links apart */ 
+    margin: 0; 
+    border-right: 2px solid #B4B4B4; /* divider */
+}
+#navbar li a:link.last-link { 
+    /* remove divider */ 
+    border-right: 0px;
+}
+#navbar li a:hover { 
+    /* change color on hover (mouseover) */ 
+    color: #EB6361;
+}
+#search {
+    display: flex;
+    justify-content: center;
+}
+#search-text-input{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:17px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
+}
+  
+#button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:11px 0 0 0;
+    text-align:center;
+    width:50px;
+}
+
+#button-holder:hover {
+    background-color: #ccc;
+}
+  
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}
+#SearchContent {
+    width: 100%;
+    height: 100%;
+}
+.lines{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px
+}
+.StoreImg{
+    height: 200px;
+    width: 200px;
+}
+.items{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
