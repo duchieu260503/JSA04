@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <script src="MainPage.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="top-bar"></div>
+        <div class="normal-wrapper">
+            <div id="logo-container">
+                <img id="logo" src="logo.png" alt=""><a href=""></a>
+                <h1>Nơi đam mê khám phá hội tụ</h1>
+            </div>
+            <ul id="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="" class="last-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="top-color-splash"></div>
+    <div class="normal-wrapper">
+        <div class="one-third">
+            <h2 class="no-margin-top">Welcome!</h2>
+            <div id="button1">
+                <button id="signInBtn">Sign in</button>
+                <button id="signUpBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="two-third">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/11/nha-tho-phu-an-nam-dinh-e1511922570803.jpg"
+                        style="width:100%">
+                    <div class="text">Nhà thờ Phú An – Nam Định</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/11/nha-tho-xuong-dien-nam-dinh-768x510.jpg"
+                        style="width:100%">
+                    <div class="text">Nhà thờ Xương Điền – Nam Định</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/11/bai-tam-dong-ha.jpg"
+                        style="width:100%">
+                    <div class="text">Bãi tắm Đông Hà</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Nam Dinh province&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        width: 672px;
+                        height: 400px;
+                    }
+        
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 100%;
+                        height: 400px;
+                    }
+        
+                    .gmap_iframe {
+                        height: 400px !important;
+                        margin-top: 20px;
+                    }
+                </style>
+            </div>    
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
